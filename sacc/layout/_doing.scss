@@ -1,6 +1,7 @@
 .examples-items {
   position: relative;
 }
+
 .examples-text {
   position: absolute;
   bottom: 0;
@@ -19,6 +20,9 @@
 }
 .doing {
   padding-bottom: 94px;
+  @media screen and (max-width: 1199.5px) {
+    display: none;
+  }
 }
 .doing-main-head {
   text-align: center;
