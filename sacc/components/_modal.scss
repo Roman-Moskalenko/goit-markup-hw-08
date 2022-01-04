@@ -1,0 +1,190 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  transition: visibility var(--transition-duration) var(--main-cubic),
+    opacity var(--transition-duration) var(--main-cubic);
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(2) rotate(90deg) translateX(1000px) translateY(1500px);
+  transition: transform 1000ms;
+}
+.modal {
+  width: 530px;
+  min-height: 580px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) rotate(0);
+  transition: transform 1000ms;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 12px;
+}
+.modal-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
+.modal-container {
+  margin-bottom: 10px;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 40px;
+  outline: none;
+  transition: border-color var(--transition-duration) var(--main-cubic);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+.modal-icon {
+  transition: fill var(--transition-duration) var(--main-cubic);
+  .modal-input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.modal-text-comment-container {
+  margin-bottom: 20px;
+}
+.modal-text-comment {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color var(--transition-duration) var(--main-cubic);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal-policy-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.modal-policy-text {
+  display: flex;
+  align-items: center;
+}
+.modal-policy-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.modal-check-item {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  transition: background-color var(--transition-duration) var(--main-cubic),
+    border var(--transition-duration) var(--main-cubic),
+    border-color var(--transition-duration) var(--main-cubic);
+}
+.modal-check-icon {
+  fill: #ffffff;
+}
+.modal-policy-check:checked + .modal-policy-text {
+  .modal-check-item {
+    background-color: var(--accent-color);
+    border: 0;
+  }
+}
+.modal-policy-check:focus + .modal-policy-text {
+  .modal-check-item {
+    border-color: var(--accent-color);
+  }
+}
+.modal-form-btn {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  padding: 10px 55px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  transition: filter var(--transition-duration) var(--main-cubic);
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.modal-input-wrape {
+  position: relative;
+}
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+.modal-close {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: fill var(--transition-duration) var(--main-cubic);
+  &:hover .modal-close-icon {
+    fill: var(--accent-color);
+  }
+  &:focus .modal-close-icon {
+    fill: var(--accent-color);
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
