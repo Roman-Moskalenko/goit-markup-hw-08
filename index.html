@@ -167,11 +167,34 @@
           <h2 class="team-main-head main-head">Наша команда</h2>
           <ul class="card list">
             <li class="card-items">
-              <img
-                src="images/our-team1.jpg"
-                alt="улыбающийся мужчина в рубашке с бородой и в очках"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team1.jpg        1x,
+                    ./images/our-team1-2x-min.jpg 2x
+                  "
+                  media="max-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./images/our-team1-tab-min.jpg    1x,
+                    ./images/our-team1-tab-2x-min.jpg 2x
+                  "
+                  media="max-width:768px"
+                />
+                <source
+                  srcset="
+                    ./images/our-team1-mob-min.jpg    1x,
+                    ./images/our-team1-mob-2x-min.jpg 2x
+                  "
+                  media="max-width:480px"
+                />
+                <img
+                  src="images/our-team1.jpg"
+                  alt="улыбающийся мужчина в рубашке с бородой и в очках"
+                />
+              </picture>
+
               <div class="team-heading">
                 <h3 class="card-second-head">Игорь Демьяненко</h3>
                 <p class="card-text" lang="en">Product Designer</p>
@@ -208,11 +231,34 @@
               </div>
             </li>
             <li class="card-items">
-              <img
-                src="images/our-team2.jpg"
-                alt="улыбающаяся девушка с белыми волосами в очках"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team2.jpg        1x,
+                    ./images/our-team2-2x-min.jpg 2x
+                  "
+                  media="max-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./images/our-team2-tab-min.jpg    1x,
+                    ./images/our-team2-tab-2x-min.jpg 2x
+                  "
+                  media="max-width:768px"
+                />
+                <source
+                  srcset="
+                    ./images/our-team2-mob-min.jpg    1x,
+                    ./images/our-team2-mob-2x-min.jpg 2x
+                  "
+                  media="max-width:480px"
+                />
+                <img
+                  src="images/our-team2.jpg"
+                  alt="улыбающаяся девушка с белыми волосами в очках"
+                />
+              </picture>
+
               <div class="team-heading">
                 <h3 class="card-second-head">Ольга Репина</h3>
                 <p class="card-text" lang="en">Frontend Developer</p>
@@ -249,11 +295,35 @@
               </div>
             </li>
             <li class="card-items">
-              <img
-                src="images/our-team3.jpg"
-                alt="улыбающийся мужчина в рубашке смотрит в сторону"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team3.jpg        1x,
+                    ./images/our-team3-2x-min.jpg 2x
+                  "
+                  media="max-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./images/our-team3-tab-min.jpg    1x,
+                    ./images/our-team3-tab-2x-min.jpg 2x
+                  "
+                  media="max-width:768px"
+                />
+                <source
+                  srcset="
+                    ./images/our-team3-mob-min.jpg    1x,
+                    ./images/our-team3-mob-2x-min.jpg 2x
+                  "
+                  media="max-width:480px"
+                />
+                <img
+                  src="images/our-team3.jpg"
+                  alt="улыбающийся мужчина в рубашке смотрит в сторону"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-heading">
                 <h3 class="card-second-head">Николай Тарасов</h3>
                 <p class="card-text" lang="en">Marketing</p>
@@ -290,11 +360,34 @@
               </div>
             </li>
             <li class="card-items">
-              <img
-                src="images/our-team4.jpg"
-                alt="брюнет в футболке и очках с ухмылкой"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team4.jpg        1x,
+                    ./images/our-team4-2x-min.jpg 2x
+                  "
+                  media="max-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./images/our-team4-tab-min.jpg    1x,
+                    ./images/our-team4-tab-2x-min.jpg 2x
+                  "
+                  media="max-width:768px"
+                />
+                <source
+                  srcset="
+                    ./images/our-team4-mob-min.jpg    1x,
+                    ./images/our-team4-mob-2x-min.jpg 2x
+                  "
+                  media="max-width:480px"
+                />
+                <img
+                  src="images/our-team4.jpg"
+                  alt="брюнет в футболке и очках с ухмылкой"
+                />
+              </picture>
+
               <div class="team-heading">
                 <h3 class="card-second-head">Михаил Ермаков</h3>
                 <p class="card-text" lang="en">UI Designer</p>
@@ -524,8 +617,10 @@
                   <use href="./images/icons.svg.svg#icon-icon-check"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю&nbsp;
-              <a class="modal-policy-link" href="">Условия договора</a>
+              <span>
+                Соглашаюсь с рассылкой и принимаю&nbsp;
+                <a class="modal-policy-link" href="">Условия договора</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="modal-form-btn">Отправить</button>
