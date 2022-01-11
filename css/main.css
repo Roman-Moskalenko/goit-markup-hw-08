@@ -772,7 +772,7 @@ menu________________________________________
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin-left: -30px;
     margin-top: -30px;
   }
 }
@@ -786,12 +786,12 @@ menu________________________________________
 
 @media screen and (min-width: 768px) {
   .advantages-list {
-    margin-right: -30px;
+    margin-left: -30px;
     margin-top: -30px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767.5px) {
   .advantages-items:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -801,14 +801,14 @@ menu________________________________________
   .advantages-items {
     flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
-    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantages-items {
     margin-top: 0;
-    margin-right: 0;
+    margin-left: 0;
   }
   .advantages-items:not(:last-child) {
     margin-right: 30px;
@@ -842,7 +842,7 @@ menu________________________________________
   color: var(--primary-text-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767.5px) {
   .advantages-head {
     text-align: center;
   }
@@ -924,7 +924,7 @@ menu________________________________________
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
-    margin-right: -30px;
+    margin-left: -30px;
   }
 }
 
@@ -940,7 +940,7 @@ menu________________________________________
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767.5px) {
   .card-items:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -949,7 +949,7 @@ menu________________________________________
 @media screen and (min-width: 768px) {
   .card-items {
     flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
+    margin-left: 30px;
     margin-top: 30px;
   }
 }
@@ -991,7 +991,7 @@ menu________________________________________
 
 @media screen and (min-width: 480px) and (max-width: 1199.5px) {
   .clients-list {
-    margin-right: -30px;
+    margin-left: -30px;
     margin-top: -30px;
   }
 }
@@ -1005,7 +1005,7 @@ menu________________________________________
 @media screen and (min-width: 480px) and (max-width: 1199.5px) {
   .cients-items {
     flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
+    margin-left: 30px;
     margin-top: 30px;
   }
 }
@@ -1142,7 +1142,7 @@ menu________________________________________
   padding-top: 60px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767.5px) {
   .footer-container-studio {
     margin-bottom: 60px;
   }
@@ -1377,7 +1377,7 @@ menu________________________________________
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767.5px) {
   .portfolio-list-item:not(:last-child) {
     margin-bottom: 30px;
   }
